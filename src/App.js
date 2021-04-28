@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Form1 from './components/content/Form1'
+import Form2 from './components/content/Form2'
+import Navbar from "./components/templates/Navbar"
+import Sidebar from './components/templates/Sidebar'
+import { Switch, Route } from "react-router-dom"
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+     <Navbar/>
+     <Sidebar/>
+     <div className="container">
+        <Switch>
+          <Route path="/Order" >
+            <Form1 />
+          </Route>
+          <Route path="/Product" >
+            <Form2/>
+          </Route>
+        </Switch>
+      </div>
     </div>
-  );
+  )
 }
-
-export default App;
