@@ -5,11 +5,12 @@ export default function Form2() {
     return (
         <div>
             <br />
-            <h1>Product List</h1>
+            <div className="Product-list"><h1>Product List</h1></div>
+            
             <div className="container">
                 <br/>
                 <form className="form-inline">
-                    <label>No.&nbsp;: &nbsp;<input type="text" className="form-control sm-2 mr-sm-2" id="No" name="No"></input></label>
+                    <label>No.&nbsp;: &nbsp;<input type="text" className="form-control " id="No" name="No"></input></label>
                 </form>
                 <div className="container p-3 my-3 border">
                 <form>
@@ -17,35 +18,42 @@ export default function Form2() {
                     <div className="col">
                         <label>Classifiacation</label>
                         <input type="text" className="form-control" id="Classifiacation" name="Classifiacation" />
+                    </div>
+                    <div className="col-1">
                         <label>Priority</label>
                         <input type="text" className="form-control" id="Priority" name="Priority" />
-                        <label>Priority</label>
-                        <input type="text" className="form-control" id="Priority" name="Priority" />
+                    </div>   
+                    <div className="col">
                         <label>Capital Expenditure Item</label>
                         <input type="text" className="form-control" id="Capital" name="Capital" />
+                    </div>
+                    <div className="col">   
                         <label>Division</label>
                         <input type="text" className="form-control" id="Division" name="Division" />
                     </div>
                 </div>
                 <br />
                 <div className="row">
-                    <div className="col">
+                    <div className="col-3">
                         <label>Total Investment amount</label>
-                        <input type="number" className="form-control" id="Total" name="Total" />
+                        <input type="number" className="form-control sm-2 mr-sm-2" id="Total" name="Total" />
                     </div>
-                    <div className="col">
+                </div>
+                <br />
+                <div className="row">
+                    <div className="col-2">
                         <label>1st H Plan</label>
                         <input type="number" className="form-control" id="1st" name="1st" />
                     </div>
-                    <div className="col">
+                    <div className="col-2">
                         <label>2st H Plan</label>
                         <input type="number" className="form-control" id="2st" name="2st" />
                     </div>
-                    <div className="col">
+                    <div className="col-2">
                         <label>Full Year Plan</label>
                         <input type="number" className="form-control" id="Full" name="Full" />
                     </div>
-                    <div className="col">
+                    <div className="col-2">
                         <label>Deferred to 2021</label>
                         <input type="number" className="form-control" id="Deferred" name="Deferred" />
                     </div>
@@ -66,7 +74,7 @@ export default function Form2() {
                     </div>
                 </div>
                 <br />
-                <button type="button" class="btn btn-success">Success</button>
+                <button type="button" class="btn btn-success">Edit</button>
             </form>
                 </div>
                 

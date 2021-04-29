@@ -1,8 +1,9 @@
 .sidenav {
     height: 100%;
-    width: 200px;
+    width: 345px;
     position: fixed;
     z-index: 1;
+    top: 0;
     left: 0;
     background-color: #2F5D8C;
     overflow-x: hidden;
@@ -10,7 +11,7 @@
   }
   
   .sidenav a {
-    padding: 6px 8px 6px 16px;
+    padding: 1rem 0rem 1rem 2rem;
     text-decoration: none;
     font-size: 25px;
     color: #F9F6E4;
@@ -22,6 +23,13 @@
     background-color: #F9F6E4;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
+  }
+
+  .sidenav h2{
+    padding: 1rem 0rem 1rem 2rem;
+    color: #D4af37;
+    font-weight: 800px;
+
   }
 
   .navbar {
@@ -40,7 +48,7 @@
   }
 
   .main {
-    margin-left: 160px; /* Same as the width of the sidenav */
+    margin-left: 345px; /* Same as the width of the sidenav */
     font-size: 28px; /* Increased text to enable scrolling */
     padding: 0px 10px;
   }
@@ -51,12 +59,18 @@
   }
 
 body {
+  margin-left: 345px;
   background-color: #F9F6E4;
   font-family: "Trirong", serif;
 }
 
 button  .btn{
   border: none;
+}
+
+.Product-list{
+  padding: 1rem 0rem 1rem 2rem;
+  
 }
 
 
